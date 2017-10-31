@@ -16,6 +16,9 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    
+      <input v-model="msg"/>
+      <button v-on:click=mohit()>me</button>
   </div>
 </template>
 
@@ -24,9 +27,15 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Mohit\'\s Vue.js App'
-    }
+      msg: 'Welcome to Mohit\'\s Vue.js App',
+    
+    methods:{
+      mohit:function(){
+      this.msg="msingh"
+      }
+    }}
   }
+
 }
 </script>
 
