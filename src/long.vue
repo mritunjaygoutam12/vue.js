@@ -1,0 +1,102 @@
+<template>
+
+<div id="long" @mouseover="mouseOver" @mouseleave="mouseLeave" :style="{height:rendh,width:rend}" >
+<div id="imgh">
+     <div v-if="active">
+    <img src="./assets/mohit.jpg">
+    </div>
+     <div v-else>
+    <img src="./assets/if_arrow_outline_5_342789.png">
+    </div>
+</div>
+<div class="landscape" @click="changep">
+   
+    <img src="./assets/if_arrow_outline_5_342789.png">
+    
+</div>
+<div v-html="leg" id="hf"></div>
+
+</div>
+</template>
+  
+<script>
+export default {
+    data:function(){
+return{
+    rend:"250px",
+    rendh:"350px",
+    leg:`<h3>Mritunjay</h3>
+    <h3>Goutam</h3>
+    `,
+    active:true
+}
+    },
+  methods:{
+      mouseOver:function(){
+      this.rend="270px";
+      this.rendh="370px";
+      this.leg=`
+      <h1>Mritunjay</h1>
+    <h1>Goutam</h1>`
+      },
+      mouseLeave:function(){
+          this.rend="250px"
+          this.rendh="350px";
+          this.leg=`<h3>Mritunjay</h3>
+    <h3>Goutam</h3>`
+      },
+      changep:function(){
+          this.active=!this.active
+      }
+  }
+}
+</script>
+
+<style>
+#long{
+     background-color: white;
+         
+ -webkit-box-shadow: 5px 5px 5px 5px grey;
+  -moz-box-shadow:    5px 5px 5px 5px grey;  
+  box-shadow:        5px 5px 5px 5px grey;
+   border-radius: 8px;
+
+    top: 30px;
+position:fixed;
+
+z-index: 9999;
+}
+#imgh{
+   width: 70%;
+    height: 200px; 
+    position: relative;
+    left:10px;
+   border-radius: 8px;
+   top:18px;
+   background-color: red;
+}
+#hf{
+    position: relative;
+    left:73px;
+    top: 25px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+img:hover{
+     opacity: 0.3;
+    filter: alpha(opacity=50);
+}
+.landscape {
+    height: 30px;
+    width: 80px;
+    position: relative;
+    left: 220px;
+    top: -80px;
+    border-radius: 70%;
+   
+}
+</style>

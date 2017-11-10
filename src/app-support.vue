@@ -1,12 +1,20 @@
 <template>
-<div id="divfo">
+
 <div id="divforall">
-    <p>mohit singh</p>
+    <p>{{write}}</p>
 </div>
-</div>
+
 </template>
 
 <script>
+export default {
+    props:['<p>'],
+    data:function(){
+        return {
+            write:"print it in compo"
+        }
+    }
+}
 </script>
 
 <style>
@@ -16,5 +24,6 @@
     height: 100px;
    border-left: 6px solid blue;
     background-color: lightgrey;
+    position: 20px 20px 20px 20px;
 }
 </style>

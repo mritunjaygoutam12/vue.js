@@ -27,5 +27,5 @@ writ++;
 
 var wr={"view":writ}
 fs.writeFile("view.json",JSON.stringify(wr, null, 4),function(err){
-    console.log("check error")
+    if(err)console.log("check error")
 })

@@ -4,9 +4,31 @@
     <meta charset="utf-8">
     <title>Vuejs</title>
   </head>
-  <body>
+  <script>
+      document.onreadystatechange = function () {
+       var state = document.readyState
+       if (state == 'complete') {
+           setTimeout(function(){
+               document.getElementById('interactive');
+              document.getElementById('load').style.visibility="hidden";
+           },1000);
+       }
+     }
+     </script>
+       <style>
+          #load{
+            width:100%;
+            height:100%;
+            position:fixed;
+            z-index:9999;
+            background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
+        }
+              </style>
+  <body style=background-color:lightgrey>
+      <div id="load"></div>
+      
     <div id="app"></div>
-    <button onclick="see()">take</button>
+    
     <script src="getit.js"></script>
     <script src="/dist/build.js"></script>
     <script src="trweb.js"></script>
@@ -14,7 +36,9 @@
   </body>
   <script>
   //function take()
-  console.log(writ,"#####@!@!@!!!@@@@@@@@@@@@@@@@")
+  //console.log(writ,"#####@!@!@!!!@@@@@@@@@@@@@@@@")
   </script>
+
+
 </html>
       
