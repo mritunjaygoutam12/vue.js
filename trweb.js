@@ -24,7 +24,7 @@ var dat =require('./view.json')
 var fs =require('fs')
 var writ=dat.view;
 writ++;
-
+var mohit="mritunjay";
 var wr={"view":writ}
 fs.writeFile("view.json",JSON.stringify(wr, null, 4),function(err){
     if(err)console.log("check error")

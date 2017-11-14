@@ -56,9 +56,9 @@ return{
 #long{
      background-color: white;
          
- -webkit-box-shadow: 5px 5px 5px 5px grey;
-  -moz-box-shadow:    5px 5px 5px 5px grey;  
-  box-shadow:        5px 5px 5px 5px grey;
+ -webkit-box-shadow: 1px 1px 1px 1px #C0C0C0;
+  -moz-box-shadow:    1px 1px 1px 1px #C0C0C0;  
+  box-shadow:        1px 1px 1px 1px#C0C0C0;
    border-radius: 8px;
 
     top: 30px;

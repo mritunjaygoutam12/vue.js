@@ -1,1 +1,2 @@
 web:node trweb.js
+web: npm run dev

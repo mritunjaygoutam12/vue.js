@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-   
-    <longdiv></longdiv>
-    <divfora>
-    </divfora>
+    <longdiv>
+      </longdiv>
+  <div><flatdiv v-for="(title,i) in titles" :name="title" :body="bodys[i]"></flatdiv></div>
     
   </div>
 </template>
 
 <script>
   
-  import data from './data.json'
+  import dataot from './data.json'
   import we from '../view.json'
   import divf from './app-support.vue'
   import longdiv from './long.vue'
+  import flatdiv from './flat.vue'
+  
+  
 
  divf.data=function(){
 return {
@@ -25,11 +27,14 @@ console.log("mohitsingh1232")
 export default {
   components:{
      'no':divf,
-     'longdiv':longdiv
+     'longdiv':longdiv,
+     'flatdiv':flatdiv
    },
   data:function(){
     return{
-      view:we.view
+      view:we.view,
+      titles:dataot.title,
+      bodys:dataot.briefy
     }
   }
    
