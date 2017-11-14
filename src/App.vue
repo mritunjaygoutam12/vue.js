@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
     <longdiv>
-      </longdiv>
-  <div><flatdiv v-for="(title,i) in titles" :name="title" :body="bodys[i]"></flatdiv></div>
-    
+      </longdiv></div>
+      
+    <div class="col-sm-6"><flatdiv v-for="(title,i) in titles" :name="title" :body="bodys[i]"></flatdiv></div>
+  </div>  
+    </div>
   </div>
 </template>
 

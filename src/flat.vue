@@ -45,8 +45,8 @@ export default {
 #flatd{
     
     background-color: white;
-    position: relative;
-    left:390px;
+   position: relative;
+   
 border-radius: 8px;
  -webkit-box-shadow: 1px 1px 1px 1px #C0C0C0;
   -moz-box-shadow:    1px 1px 1px 1px #C0C0C0;  

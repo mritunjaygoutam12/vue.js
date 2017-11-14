@@ -61,8 +61,7 @@ return{
   box-shadow:        1px 1px 1px 1px#C0C0C0;
    border-radius: 8px;
 
-    top: 30px;
-position:fixed;
+
 
 z-index: 9999;
 }
