@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+import VueResource from 'vue-resource'
 
-Vue.use(Vuetify)
+Vue.use(VueResource);
 import App from './App.vue'
 
 import data from './data.json'

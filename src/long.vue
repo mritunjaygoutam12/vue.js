@@ -58,10 +58,10 @@ return{
          
  -webkit-box-shadow: 1px 1px 1px 1px #C0C0C0;
   -moz-box-shadow:    1px 1px 1px 1px #C0C0C0;  
-  box-shadow:        1px 1px 1px 1px#C0C0C0;
+  box-shadow:1px 1px 1px 1px#C0C0C0;
    border-radius: 8px;
-
-
+   position:sticky;
+   top:20px;
 
 z-index: 9999;
 }
