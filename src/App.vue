@@ -5,17 +5,20 @@
     <div class="col-sm-4">
     <longdiv>
       </longdiv></div>
-      
-    <div class="col-sm-8"><flatdiv v-for="(title,i) in titles" :name="title" :body="bodys[i]"></flatdiv>
-    </div>   <p>sndzlnvslnvlkfsncv klsnc vlksnfcv knsfckvlnfscvkn</p>
-
+      <div>
+    <div class="col-sm-8"><flatdiv v-for="(titl,i) in titles" :name="titl" :body="bodys[i]"></flatdiv>
+    </div>  
     <div id="comment">
-      <h1>comment</h1><hr><hr>
+      <h1>Comment</h1><hr><hr>
       <div ><textarea rows="4" cols="50" name="comment" class="text" form="usrform"  v-model="comments.comment">
 Enter text here...</textarea></div>
       <button @click="submit" class="text">submit</button>
-    </div><br>
-    
+    </div>
+
+
+<div id="comment1" >
+  <hr><h3 v-for="sh in comshow">{{sh.comment}} <hr></h3>
+</div></div>
   </div>  
     </div>
   </div>
@@ -32,7 +35,6 @@ Enter text here...</textarea></div>
   var imp=document.body.clientWidth
   console.log(imp,"waiotzxlclxmlcmlxzmc")
   
-
  divf.data=function(){
 return {
   write:we.view
@@ -64,6 +66,7 @@ export default {
       .then(Response =>{
         console.log(Response);
         this.showi();
+        this.comments.comment="";
       },
         error =>{
           console.log(error);
@@ -83,6 +86,7 @@ export default {
           dataconv.push(data[key]);
         }
         this.comshow=dataconv;
+        console.log(comshow)
       })
       ;
      
@@ -93,14 +97,20 @@ export default {
 </script>
 
 <style lang="scss">
-
 #comment{
   position: relative;
+  margin-top: 40px;
+  left:10px;
+  margin-bottom: 10px;
+}
+#comment1{
+  position: relative;
   margin-top: 20px;
-  left: 80px;
+  left:38px;top: 80px;
   margin-bottom: 10px;
 }
 .text{ 
 background:#DCDCDC;
 }
+
 </style>
