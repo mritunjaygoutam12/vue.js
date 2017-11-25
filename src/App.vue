@@ -91,7 +91,10 @@ export default {
       ;
      
     }
-  }
+  },
+  beforeMount(){
+    	this.showi()
+    }
   
 }
 </script>
@@ -106,11 +109,11 @@ export default {
 #comment1{
   position: relative;
   margin-top: 20px;
-  left:38px;top: 80px;
+  left:38px;top: 60px;
   margin-bottom: 10px;
 }
 .text{ 
-background:#DCDCDC;
+background:white;
 }
 
 </style>
