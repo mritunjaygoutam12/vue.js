@@ -3,12 +3,11 @@
   <div id="flatd" :style="{width:rend,top:rendt}" @mouseover="mouseOver" @mouseleave="mouseLeave">
 <div id="set">
 <svg height="210" width="500" >
-  <polygon points="6,50,6,190,25,70,6,50,25,70,70,50" style="fill:grey;stroke:blue;stroke-width:0;fill-rule:nonzero;"/>
+  <polygon points="6,50,6,190,25,70,6,50,25,70,70,50" style="fill:rgb(183, 255, 248);stroke:blue;stroke-width:0;fill-rule:nonzero;"/>
   Sorry, your browser does not support inline SVG.
 </svg></div>
 <div id="headi">
-    <h1>{{name}}</h1>
-</div>
+    <h1>{{name}}</h1></div>
 <div id="prodet">
 <p>{{body}}
 </p>
@@ -24,6 +23,7 @@ export default {
           rend:"800px",
           
           rendt:"26px",
+          add:"<img src=\"./assets/on.svg\" />"
          // gsoc:"GSoC 2017"
       }
   },
@@ -44,13 +44,14 @@ export default {
 <style>
 #flatd{
     
-    background-color: white;
-   position: relative;
-   
+    background-color: white;   
 border-radius: 8px;
- -webkit-box-shadow: 1px 1px 1px 1px black;
-  -moz-box-shadow:    1px 1px 1px 1px black;  
-  box-shadow:        1px 1px 1px 1px black;
+width: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+  position:relative;
+  margin-top: 20px;
 }
 #set{
     position: relative;

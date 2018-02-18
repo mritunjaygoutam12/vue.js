@@ -3,25 +3,15 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
-    <longdiv>
-      </longdiv></div>
+              <longdiv></longdiv>
+            <icon></icon>
+          </div>     
       <div>
-    <div class="col-sm-8"><flatdiv v-for="(titl,i) in titles" :name="titl" :body="bodys[i]"></flatdiv>
-    </div>  
-    <div id="comment">
-      <h1>Comment</h1><hr><hr>
-      <div ><textarea rows="4" cols="50" name="comment" class="text" form="usrform"  v-model="comments.comment">
-Enter text here...</textarea></div>
-      <button @click="submit" class="text">submit</button>
-    </div>
-
-
-<div id="comment1" >
-  <hr><h3 v-for="sh in comshow">{{sh.comment}} <hr></h3>
-</div></div>
+<skill></skill>
+<project></project>
+          <about></about>
   </div>  
-    </div>
-  </div>
+  </div></div></div>
 </template>
 
 <script>
@@ -30,7 +20,12 @@ Enter text here...</textarea></div>
   import we from '../view.json'
   import divf from './app-support.vue'
   import longdiv from './long.vue'
-  import flatdiv from './flat.vue'
+  import icon from './icon.vue'
+  import skill from './test.vue'
+  import project from './project.vue'
+  import contact from './contact.vue'
+    import about from './aboutme.vue'
+
   
   var imp=document.body.clientWidth
   console.log(imp,"waiotzxlclxmlcmlxzmc")
@@ -46,10 +41,15 @@ export default {
   components:{
      'no':divf,
      'longdiv':longdiv,
-     'flatdiv':flatdiv
+     'icon':icon,
+     'skill':skill,
+     'project':project,
+     'contact':contact,
+'about':about
    },
   data:function(){
     return{
+      seti:"os",
       view:we.view,
       titles:dataot.title,
       bodys:dataot.briefy,
@@ -57,6 +57,7 @@ export default {
       comments:{
         comment:""
       }
+     // leng:this.comshow.length
     }
   },
   methods:{
@@ -86,7 +87,8 @@ export default {
           dataconv.push(data[key]);
         }
         this.comshow=dataconv;
-        console.log(comshow)
+        this.comshow=this.comshow.reverse();
+        console.log(this.comshow)
       })
       ;
      
@@ -101,7 +103,7 @@ export default {
 
 <style lang="scss">
 #comment{
-  position: relative;
+  position: sticky;
   margin-top: 40px;
   left:10px;
   margin-bottom: 10px;
@@ -116,4 +118,11 @@ export default {
 background:white;
 }
 
+.os{
+  position:sticky;
+  height:120%;
+  -moz-box-shadow:    1px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 1px 3px 5px 6px #ccc;
+  box-shadow: 10px 5px 5px white;
+}
 </style>

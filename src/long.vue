@@ -3,7 +3,7 @@
 <div id="long" @mouseover="mouseOver" @mouseleave="mouseLeave" :style="{height:rendh,width:rend}" >
 <div id="imgh">
      <div v-if="active">
-    <img src="./assets/mohit.jpg">
+    <img id="divforimg" src="./assets/mohit.jpg">
     </div>
      <div v-else>
     <img src="./assets/if_arrow_outline_5_342789.png">
@@ -54,7 +54,7 @@ return{
 
 <style>
 #long{
-     background-color: white;
+    background-color: white;
          
  -webkit-box-shadow: 1px 1px 1px 1px #C0C0C0;
   -moz-box-shadow:    1px 1px 1px 1px #C0C0C0;  
@@ -62,8 +62,6 @@ return{
    border-radius: 8px;
    position:sticky;
    top:20px;
-
-z-index: 9999;
 }
 #imgh{
    width: 70%;
@@ -72,7 +70,13 @@ z-index: 9999;
     left:10px;
    border-radius: 8px;
    top:18px;
-   background-color: red;
+   
+}
+#divforimg{
+    border-radius:50%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -2px black;
 }
 #hf{
     position: relative;
@@ -97,5 +101,11 @@ img:hover{
     top: -80px;
     border-radius: 70%;
    
+}
+h3{
+    color:rgb(14, 232, 210);
+}
+h1{
+    color:rgb(14, 232, 210);
 }
 </style>
