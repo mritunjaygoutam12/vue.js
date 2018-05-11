@@ -1,17 +1,13 @@
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import VueResource from 'vue-resource'
+import App from './App'
 
-Vue.use(VueResource);
-import App from './App.vue'
+Vue.config.productionTip = false
 
-import data from './data.json'
-import we from '../view.json'
-
-
-// index.js or main.js
-//@import 'path/to/node_modules/vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
-//Vue.component('divfora',divfor)
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(App)
+  components: { App },
+  template: '<App/>'
 })

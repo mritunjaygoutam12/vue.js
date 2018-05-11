@@ -10,8 +10,8 @@
       <h1><i class="fa fa-hand-o-right" style="font-size:48px;color:rgb(14, 232, 210)"></i>
   {{head}}</h1></div>
       <div id="up">
-      <h4></h4><div id="skae"><p>I am Mritunjay Goutam.Currently pursuing B.tech in Coumputer science and engineering from SMVDU,Katra,India.</p></div>
-                <h4>Interest</h4><div id="skae"><p>Making API and Frontend development</p></div><br><br><br>
+      <h4></h4><div id="skae"><p>I am Mritunjay Goutam.Currently pursuing B.tech in Coumputer science and engineering from SMVDU,Katra,India.</p></div><br>
+                <h4>Interest</h4><div id="skae"><p>Making API, Frontend development and Blockchain</p></div><br><br><br>
                                 <h4>Contact Me</h4><div id="skae">
                                    <a href="https://github.com/mritunjaygoutam12/" target="_blank"> <i class="fa fa-github" style="font-size:48px;color:rgb(14, 232, 210)"></i></a>
                                <a href="https://twitter.com/Mohitsi76464546" target="_blank"> <i class="fa fa-twitter" style="font-size:48px;color:rgb(14, 232, 210)"></i></a>

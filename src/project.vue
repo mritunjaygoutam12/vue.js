@@ -24,7 +24,7 @@ export default {
           rendt:"26px",
           add:"<img src=\"./assets/on.svg\" />",
          // gsoc:"GSoC 2017"
-         head:"Project"
+         head:"Experience & Project"
       }
   },
   methods:{

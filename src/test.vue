@@ -11,11 +11,11 @@
     <h1><img src="./assets/on.svg"/>  {{head}}</h1></div>
 <div id="se">
 <h4>Javascript</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:85%;border-radius:10%;"></div></div>
-<h4>Vuejs</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:80%;border-radius:10%;"></div></div>
-<h4>HTML & CSS</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:95%;border-radius:10%;"></div></div>
-<h4>C</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:60%;border-radius:10%;"></div></div>
-<h4>Nodejs</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:70%;border-radius:10%;"></div></div>
-<h4>Go</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:60%;border-radius:10%;"></div></div>
+<h4>Nodejs</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:80%;border-radius:10%;"></div></div>
+<h4>Vuejs</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:95%;border-radius:10%;"></div></div>
+<h4>HTML && CSS</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:60%;border-radius:10%;"></div></div>
+<h4>C</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:70%;border-radius:10%;"></div></div>
+<h4>Python</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:60%;border-radius:10%;"></div></div>
 <h4>Mysql</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:80%;border-radius:10%;"></div></div>
 <h4>Sqlite</h4><div id="sk"><div style="background-color: rgb(183, 255, 248);height: 10px;width:80%;border-radius:10%;"></div></div>
 </div>
@@ -28,7 +28,7 @@ export default {
           rend:"800px",
           rendt:"26px",
           body:"tesing body",
-          head:"EXPERIENCES"
+          head:"Skills"
       }
   },
   methods:{

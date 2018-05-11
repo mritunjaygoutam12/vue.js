@@ -17,7 +17,6 @@
 <script>
   
   import dataot from './data.json'
-  import we from '../view.json'
   import divf from './app-support.vue'
   import longdiv from './long.vue'
   import icon from './icon.vue'
@@ -61,38 +60,6 @@ export default {
     }
   },
   methods:{
-    submit:function(){
-     // console.log(this.comments.comment)
-     this.$http.post('https://comment-c7d54.firebaseio.com/comments.json',this.comments)
-      .then(Response =>{
-        console.log(Response);
-        this.showi();
-        this.comments.comment="";
-      },
-        error =>{
-          console.log(error);
-      });
-     // this.t=0;
-    // this.showi();
-    },
-    showi:function(){
-       this.$http.get('https://comment-c7d54.firebaseio.com/comments.json')
-      .then(Response =>{
-          return Response.json();
-      })
-      .then(data => {
-        console.log(data)
-        const dataconv=[];
-        for(let key in data){
-          dataconv.push(data[key]);
-        }
-        this.comshow=dataconv;
-        this.comshow=this.comshow.reverse();
-        console.log(this.comshow)
-      })
-      ;
-     
-    }
   },
   beforeMount(){
     	this.showi()
