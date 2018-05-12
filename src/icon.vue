@@ -3,9 +3,8 @@
      <div class="vuelo">
           <img src="./assets/logo.png">
      </div> <div class="vuelo">
-          <img src="./assets/590px-Node.js_logo.svg.png">
+          <img src="https://cdn.worldvectorlogo.com/logos/nodejs.svg">
           </div>
-        <div id="view"><p>30<br><b>view</b></p></div>
   </div>
 </template>
 

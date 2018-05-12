@@ -3,7 +3,7 @@
 <div id="long" @mouseover="mouseOver" @mouseleave="mouseLeave" :style="{height:rendh,width:rend}" >
 <div id="imgh">
      <div v-if="active">
-    <img id="divforimg" src="./assets/mohit.jpg">
+    <img id="divforimg" src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/11258486_486151114867370_4036505823286958141_n.jpg?_nc_cat=0&_nc_eui2=AeF3dP49inGNRGEO56-IYSUBB8zcIj63lPf_amZw0FFf0Mmen-7KGKYekks6Q7nzogZRTaCWmmeYxjKPjQhvKD5mdbWGPYzPPlftBnFyfSBM4g&oh=a303f569537bde8a22c5bfaf5b699340&oe=5B9708EC">
     </div>
      <div v-else>
     <img src="./assets/if_arrow_outline_5_342789.png">
